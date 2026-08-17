@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sefunmi's Breakfast — Cart</title>
+  <meta name="description" content="Sefunmi's Breakfast — a demo bakery storefront with a working cart, checkout, order history, and inventory management. Built with vanilla JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="#f6c453"/><circle cx="20" cy="20" r="6.5" fill="#3b2a1d"/><g fill="#3b2a1d"><circle cx="13" cy="12" r="1.1"/><circle cx="26" cy="10" r="1.1"/><circle cx="31" cy="19" r="1.1"/><circle cx="10" cy="22" r="1.1"/><circle cx="27" cy="28" r="1.1"/><circle cx="16" cy="30" r="1.1"/></g></svg> Sefunmi's Breakfast</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="cart.html" aria-current="page">Cart <span class="cart-badge" id="cart-badge">0</span></a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="manage.html">Manage</a></li>
+          <li><button class="theme-btn" id="theme-btn" type="button" aria-label="Switch theme">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Your cart</h2>
+      <p class="sub">Adjust quantities, then check out below.</p>
+      <div class="panel">
+        <div class="table-wrap" id="cart-table"></div>
+      </div>
+      <div class="panel" id="checkout-panel">
+        <h3 style="margin-bottom:0.8rem">Checkout</h3>
+        <div class="form-grid">
+          <label class="field">Customer
+            <select id="co-customer"></select>
+          </label>
+          <label class="field" id="co-name-field" hidden>New customer name
+            <input type="text" id="co-name" placeholder="Full name">
+          </label>
+          <label class="field" id="co-email-field" hidden>Email
+            <input type="email" id="co-email" placeholder="name@email.com">
+          </label>
+          <label class="field" id="co-phone-field" hidden>Phone
+            <input type="tel" id="co-phone" placeholder="555-000-0000">
+          </label>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" id="co-place" type="button">Place order</button>
+          <button class="btn btn-danger small" id="cart-clear" type="button">Empty cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <p>Sefunmi's Breakfast — a portfolio demo store by <a href="https://dsakinolu.github.io/portfolio/" rel="noopener">Sefunmi Akin-Olukunle</a>.</p>
+    <p>Originally an Indiana University I211 Flask project, rebuilt as a fully client-side app.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
