@@ -1,6 +1,6 @@
 # 🥯 Sefunmi's Breakfast
 
-**Live demo:** https://dsakinolu.github.io/sefunmis-breakfast/
+**Live demo:** https://dsakinolu.github.io/sefunmis-breakfast/ 📲 Installable: open the site on your phone and choose "Add to Home Screen."
 
 A bakery storefront with a fully working shopping experience — browse the menu,
 fill a cart, check out as a customer, review order history, and manage the
